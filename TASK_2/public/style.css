@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #555;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .btn {
+  align-self: flex-end;
+}
+
+.nav-heading {
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #555;
+  color: #ddd;
+  border: 1.5px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  color: #555;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 15px 20px;
+  margin: 15px 20px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.card-item {
+  margin: 10px;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card-avatar {
+  width: 200px;
+}
+
+.loader {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid #ddd;
+  border-top: 10px solid #555;
+  animation: spin 2s linear infinite;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.display {
+  visibility: visible !important;
+}
